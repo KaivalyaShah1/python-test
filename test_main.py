@@ -9,6 +9,6 @@ def test_subtract_numbers():
     assert subtract_numbers(5, 3) == 2
 
 
-# This test is intentionally wrong so you can see what happens when it fails
+# This test is intentionally wrong so you can see what happens when it failss
 def test_fail_example():
     assert add_numbers(1, 1) == 2
