@@ -11,4 +11,4 @@ def test_subtract_numbers():
 
 # This test is intentionally wrong so you can see what happens when it failss
 def test_fail_example():
-    assert add_numbers(1, 1) == 2
+    assert add_numbers(1, 31) == 32
