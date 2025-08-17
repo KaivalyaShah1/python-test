@@ -7,3 +7,13 @@ rules:
     event_types: ["push"]
     parameters:
       pattern: '^(feat|fix|docs|style|refactor|perf|test|chore)(\(.+\))?: .+'
+  - id: no-direct-main-push
+    name: "No Direct Push to Main"
+    description: "Prevent direct pushes to main branch - use pull requests"
+    enabled: true
+    severity: high
+    event_types: ["push"]
+    conditions:
+      - type: "protected_branches"
+        parameters:
+          protected_branches: ["main", "master"]
