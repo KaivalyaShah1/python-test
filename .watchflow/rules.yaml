@@ -1,7 +1,9 @@
 rules:
-  - description: "no code can be pushed to main branch and a pr must be created and then it can be merged to main branch"
+  - id: pr-approval-required
+    name: PR Approval Required
+    description: "no code can be pushed to main branch and a pr must be created and then it can be merged to main branch"
     enabled: true
     severity: high
-    event_types: ["pull_request"]
+    event_types: ["push"]
     parameters:
       protected_branches: ["main"]
